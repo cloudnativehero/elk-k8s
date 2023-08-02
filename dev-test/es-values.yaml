@@ -1,0 +1,11 @@
+replicas: 1
+minimumMasterNodes: 1
+
+secret:
+  enabled: true
+  password: "elasticPassword" # Choose your own password. Same will be used for ELK logins
+volumeClaimTemplate:
+  accessModes: ["ReadWriteOnce"]
+  resources:
+    requests:
+      storage: 10Gi
